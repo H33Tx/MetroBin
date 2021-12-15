@@ -1,0 +1,13 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^paste/?$ ./?page=paste
+RewriteRule ^about/?$ ./?page=about
+RewriteRule ^rules/?$ ./?page=rules
+RewriteRule ^recent/?$ ./?page=recent
+RewriteRule ^view/(.*)/?$ ./?page=view&paste=$1
+RewriteRule ^raw/(.*)/?$ ./raw.php?id=$1
+RewriteRule ^edit/(.*)/?$ ./?page=edit&paste=$1
