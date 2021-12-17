@@ -15,6 +15,7 @@ No matter what people enter in the paste field, even if it's a PHP script, it wo
 - [x] Edit Pastes
 - [x] View Paste
 - [x] Raw Paste
+- [x] Copy Paste (to clipboard)
 - [ ] Download Paste
 - [ ] Delete Pastes
 - [ ] Report Pastes
